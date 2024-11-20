@@ -1,0 +1,12 @@
+<app-search-bar [(search)]="search"></app-search-bar>
+
+<div class="grid-products">
+  @for (product of filteredProducts(); track product) {
+  <app-fiche-produit [product]="product" />
+  } @empty {
+  <p>Aucun produit trouvé.</p>
+  }
+</div>
+@if (filteredProducts().length > 0) {
+<p>{{ filteredProducts().length }} produit(s).</p>
+}

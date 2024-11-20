@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 4px 4px 10px rgba(25, 40, 27, 0.146);
+  width: 300px;
+  border-radius: 20px;
+  height: 550px;
+}
+
+img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.prix {
+  color: rgb(74, 74, 74);
+  font-style: italic;
+}
